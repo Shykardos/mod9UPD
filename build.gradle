@@ -1,0 +1,37 @@
+plugins {
+    id 'java'
+    id 'war'
+}
+
+group = 'com.goit'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'cloud.piranha.webapp:piranha-webapp-webservlet:20.5.0'
+    implementation 'cloud.piranha.webapp:piranha-webapp-webservlet:20.5.0'
+    implementation 'com.mattunderscore:filter-utils:0.2.8'
+    implementation 'com.mattunderscore:filter-utils:0.2.8'
+    implementation 'nl.talsmasoftware.context:servletrequest-propagation:1.0.11'
+    implementation 'nl.talsmasoftware.context:context-propagation-servletrequest:0.4.0'
+    implementation 'com.mattunderscore:filter-utils:0.2.8'
+    implementation 'ca.grimoire.spring:spring-request-aware:1.0'
+    implementation 'nl.talsmasoftware:context-propagation-servletrequest:0.4.1'
+    implementation 'org.webjars:webjars-webfilter-resolver:0.1.1'
+    implementation 'com.github.olada:webjars-webfilter-resolver:0.1.0'
+    implementation 'cloud.piranha.webapp:piranha-webapp-webservlet:20.5.0'
+    implementation 'cloud.piranha.servlet:piranha-servlet-webservlet:20.4.0'
+    testImplementation platform('org.junit:junit-bom:5.9.1')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    implementation 'org.springframework.boot:spring-boot-starter-thymeleaf:2.5.1'
+    implementation 'org.thymeleaf:thymeleaf-spring5:3.0.12.RELEASE'
+    implementation 'javax.servlet:jstl:1.2'
+    implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+}
+
+test {
+    useJUnitPlatform()
+}
